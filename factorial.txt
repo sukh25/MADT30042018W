@@ -1,0 +1,17 @@
+func factorial(of num: Int) -> Int {
+
+    if num == 1 {
+
+        return 1
+
+    } else {
+
+        return num * factorial(of:num - 1)
+
+    }
+
+}
+
+let result = factorial(of: 4)
+
+print("The factorial number is \(result)")
